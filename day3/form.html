@@ -1,0 +1,53 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<?php if(count($errors) >0): ?>
+<div style="color:red">
+    <ul>
+        <?php foreach ($errors as $error): ?>
+        <li><?= $error; ?></li>
+        <?php endforeach; ?>
+    </ul>
+</div>
+<?php endif; ?>
+
+<form action="index.php" method="post">
+    <input type="text" name="firstname" placeholder="firstname"><br>
+    <input type="text" name="lastname" placeholder="lastname"><br>
+    <input type="text" name="address" placeholder="address"><br>
+    <label>country</label>
+    <select name="country">
+        <?php foreach ($country as $key => $value): ?>
+        <option><?= $value; ?></option>
+        <?php endforeach; ?>
+    </select><br>
+    <label>male</label>
+    <input type="radio" name="gender" value="male">
+    <label>female</label>
+    <input type="radio" name="gender" value="female"><br>
+    <label>skills</label><br>
+    <label>html</label>
+    <input type="checkbox" name="skills[]" value="html">
+    <label>css</label>
+    <input type="checkbox" name="skills[]" value="css">
+    <label>js</label>
+    <input type="checkbox" name="skills[]" value="js">
+    <br>
+    <input type="text" name="username" placeholder="username">  <br>
+    <input type="password" name="password" placeholder="password">  <br>
+    <input type="text" name="department" placeholder="department">  <br><br><br>
+    <label><?= $random_value; ?></label><br>
+    <input type="text" name="random">  <br>
+    <input type="hidden" name="random_value" value="<?= $random_value ?>">
+    <input type="submit" value="save">  <br>
+</form>
+</body>
+</html>
