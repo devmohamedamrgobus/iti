@@ -31,8 +31,8 @@ $products = getProduct();
             <td><?= $product['name'] ?></td>
             <td><?= substr($product['description'],0,19) . "..." ?></td>
             <td><img src="img/<?= $product['img'] ?>"></td>
-            <td><a href="">update</a></td>
-            <td><a href="">delete</a></td>
+            <td><a href="edit.php?id=<?= $product['id'] ?>">update</a></td>
+            <td><a href="delete.php?id=<?= $product['id'] ?>">delete</a></td>
         </tr>
         <?php endforeach; ?>
     </table>

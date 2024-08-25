@@ -33,6 +33,16 @@ function getProduct()
 }
 
 
+function singleProduct($id)
+{
+    $connect =  connection();
+    $sql = "SELECT * FROM `product` where `id` = $id";
+
+    $query = mysqli_query($connect,$sql);
+    return mysqli_fetch_assoc($query);
+}
+
+
 
 function deleteProduct(int $id)
 {
