@@ -1,11 +1,15 @@
 <?php
 
+if($_SERVER['REQUEST_METHOD'] == 'POST'){
+     $students =  explode(",",$_POST['students']);
+    foreach ($students as $student){
+        $content =  file_get_contents('cer.html');
 
+        $newcontent =  str_replace('{name}',$student,$content);
 
-$content =  file_get_contents('cer.html');
+        fopen("$student.html",'w');
 
-$newcontent =  str_replace('{name}','ahmed',$content);
+        file_put_contents("$student.html",$newcontent);
+    }
+}
 
-fopen('ahmed.html','w');
-
-file_put_contents('ahmed.html',$newcontent);
