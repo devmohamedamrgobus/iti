@@ -1,0 +1,53 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "2fc7495a348bb973b9395bb5974e5e50",
+    "packages": [
+        {
+            "name": "iti/db",
+            "version": "v1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/devmohamedamrgobus/itidb.git",
+                "reference": "e73d37a3a7083040f89ffc05a9761edb1e53fa52"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/devmohamedamrgobus/itidb/zipball/e73d37a3a7083040f89ffc05a9761edb1e53fa52",
+                "reference": "e73d37a3a7083040f89ffc05a9761edb1e53fa52",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Iti\\Db\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "mohamed amr",
+                    "email": "mohamed.amr@gobus-eg.com"
+                }
+            ],
+            "description": "databsae lib",
+            "support": {
+                "issues": "https://github.com/devmohamedamrgobus/itidb/issues",
+                "source": "https://github.com/devmohamedamrgobus/itidb/tree/v1"
+            },
+            "time": "2024-09-01T11:03:04+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.6.0"
+}

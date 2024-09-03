@@ -1,0 +1,24 @@
+{
+    "name": "iti/mvc",
+    "description": "mvc",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Iti\\Mvc\\": "src/"
+        },
+        "files": [
+            "src/core/helper.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "mohamed amr",
+            "email": "mohamed.amr@gobus-eg.com"
+        }
+    ],
+    "require": {
+        "filp/whoops": "^2.15",
+        "iti/db": "^1.0",
+        "jenssegers/blade": "^1.4"
+    }
+}

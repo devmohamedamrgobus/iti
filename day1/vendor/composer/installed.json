@@ -1,0 +1,43 @@
+{
+    "packages": [
+        {
+            "name": "iti/db",
+            "version": "v1",
+            "version_normalized": "1.0.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/devmohamedamrgobus/itidb.git",
+                "reference": "e73d37a3a7083040f89ffc05a9761edb1e53fa52"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/devmohamedamrgobus/itidb/zipball/e73d37a3a7083040f89ffc05a9761edb1e53fa52",
+                "reference": "e73d37a3a7083040f89ffc05a9761edb1e53fa52",
+                "shasum": ""
+            },
+            "time": "2024-09-01T11:03:04+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Iti\\Db\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "mohamed amr",
+                    "email": "mohamed.amr@gobus-eg.com"
+                }
+            ],
+            "description": "databsae lib",
+            "support": {
+                "issues": "https://github.com/devmohamedamrgobus/itidb/issues",
+                "source": "https://github.com/devmohamedamrgobus/itidb/tree/v1"
+            },
+            "install-path": "../iti/db"
+        }
+    ],
+    "dev": true,
+    "dev-package-names": []
+}
